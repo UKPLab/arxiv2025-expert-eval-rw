@@ -3,9 +3,9 @@
 [![License](https://img.shields.io/github/license/UKPLab/arxiv2025-expert-eval-rw)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.11-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
-<div style="background-color: #f0f0f0; text-align: center; max-width: 500px; width: 100%; margin: auto;">
-  <img src="static/images/Teaser.svg" alt="My SVG Image" style="display: block; margin: auto;"/>
-</div>
+<p align="center">
+  <img src="static/images/Teaser.svg" style="width:75%">
+<p align="center">
 
 This repository contains code and resources related to the paper "[Expert Preference-based Evaluation of Automated Related Work Generation]()".
 
