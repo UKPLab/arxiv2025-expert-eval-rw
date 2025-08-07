@@ -1,3 +1,12 @@
-# This template is low-dependency. 
-# By default there is no requirements added here.
-# Add the requirements you need to this file.
+numpy==1.26.4
+openai==1.90.0
+pylatexenc==2.10
+python-dotenv==1.0.1
+requests==2.31.0
+scipy==1.15.3
+spacy==3.7.5
+tiktoken==0.9.0
+torch==2.6.0
+tqdm==4.66.4
+transformers==4.52.4
+vllm==0.8.5.post1
