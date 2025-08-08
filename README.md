@@ -13,8 +13,7 @@ This repository contains code and resources related to the paper "[Expert Prefer
 
 ✉️ Contact person: [Furkan Şahinuç](mailto:furkan.sahinuc@tu-darmstadt.de) 
 
-[UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/
-)
+[UKP Lab](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt](https://www.tu-darmstadt.de/)
 
 Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
 
@@ -61,7 +60,7 @@ pip install -r requirements.txt
 
 ## Dataset
 
-We introduce a novel dataset for automatic related work generation. Specifically, the dataset includes content from the main papers' related work sections, as well as content from the papers cited within those sections. For each main paper, the dataset provides detailed metadata, along with both raw and cleaned versions of the abstract, introduction, and related work sections. For each cited paper, the dataset includes the abstract and introduction as they appear under the corresponding related work section. You can access the dataset by following this [link]().
+We introduce a novel dataset for automatic related work generation. Specifically, the dataset includes content from the main papers' related work sections, as well as content from the papers cited within those sections. For each main paper, the dataset provides detailed metadata, along with both raw and cleaned versions of the abstract, introduction, and related work sections. For each cited paper, the dataset includes the abstract and introduction as they appear under the corresponding related work section. You can access the dataset by following this [link](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/4700).
 
 ## Preliminary Evaluation Experiments
 
