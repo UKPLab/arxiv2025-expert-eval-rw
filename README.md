@@ -1,5 +1,5 @@
 # Expert Preference-based Evaluation of Automated Related Work Generation
-[![Arxiv](https://img.shields.io/badge/Arxiv-YYMM.NNNNN-red?style=flat-square&logo=arxiv&logoColor=white)](https://put-here-your-paper.com)
+[![Arxiv](https://img.shields.io/badge/Arxiv-2508.07955-red?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.07955)
 [![License](https://img.shields.io/github/license/UKPLab/arxiv2025-expert-eval-rw)](https://opensource.org/licenses/Apache-2.0)
 [![Python Versions](https://img.shields.io/badge/Python-3.11-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
@@ -7,7 +7,7 @@
   <img src="static/images/Teaser.svg" style="width:75%">
 <p align="center">
 
-This repository contains code and resources related to the paper "[Expert Preference-based Evaluation of Automated Related Work Generation]()".
+This repository contains code and resources related to the paper "[Expert Preference-based Evaluation of Automated Related Work Generation](https://arxiv.org/abs/2508.07955)".
 
 > **Abstract:** Expert domain writing, such as scientific writing, typically demands extensive domain knowledge. Recent advances in large language models (LLMs) show promising potential in automating this process, reducing the expert workload. However, evaluating the quality of automatically generated scientific writing is a crucial open issue, as it requires knowledge of domain-specific evaluation criteria and the ability to discern expert preferences. Conventional task-agnostic automatic evaluation metrics and LLM-as-a-judge systems—primarily designed for mainstream NLP tasks—are insufficient to grasp expert preferences and domain-specific quality standards. To address this gap and support realistic human-AI collaborative writing, we focus on related work generation, one of the most challenging scientific tasks, as an exemplar. We propose GREP, a multi-turn evaluation framework that integrates classical related work evaluation criteria with expert-specific preferences. Instead of assigning a single overall score, our framework decomposes the evaluation into smaller fine-grained dimensions. This localized evaluation approach is further augmented with contrastive few-shot examples to provide detailed contextual guidance for the evaluation dimensions. The design principles allow our framework to deliver cardinal assessment of quality, which can theoretically facilitate better post-training compared to ordinal preference data. For better accessibility, we design two variants of GREP: a more precise variant with proprietary LLMs as evaluators, and a cheaper alternative with open-weight LLMs.  Empirical investigation reveals that our framework is able to assess the quality of related work sections in a much more robust manner compared to standard LLM judges, reflects natural scenarios of scientific writing, and bears a strong correlation with the assessment of human experts. We also observe that generations from state-of-the-art LLMs struggle to satisfy validation constraints of a suitable related work section. They (mostly) fail to improve based on feedback as well.
 
@@ -189,13 +189,13 @@ Please use the following citation:
 
 ```
 @misc{sahinuc2025expertEval,
-    title       = {Evaluating Large Language Models Trained on Code}, 
+    title       = {Expert Preference-based Evaluation of Automated Related Work Generation}, 
     author      = {Furkan \c{S}ahinu\c{c} and Subhabrata Dutta and Iryna Gurevych},
     year        = {2025},
-    eprint      = {},
+    eprint      = {2508.07955},
     archivePrefix={arXiv},
     primaryClass={cs.CL},
-    url         = {https://arxiv.org/abs/}, 
+    url         = {https://arxiv.org/abs/2508.07955}, 
 }
 ```
 
