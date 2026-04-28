@@ -286,10 +286,7 @@ def run_pipeline(generator_model, coh_eval_model, cont_eval_model, config, datas
                     cont_type_inst = config['prompts']['contribution']['instruction'][change_dict[cont_dist[main_paper_id]]]
                     expected_type = change_dict[cont_dist[main_paper_id]]
 
-                if not config['report_feedback']:
-                    feedback = record[i-1]['feedback']
-                else:
-                    feedback = record[i-1]['eval_report']
+                feedback = record[i-1]['feedback']
 
                 draft_sys_prompt = config['prompts']['next_draft']['system_prompt'].format(contribution=cont_type_inst)
                 draft_user_prompt = f"{utils.set_paper_info_prompt(active_data)}\n\n" \
@@ -335,12 +332,11 @@ def run_pipeline(generator_model, coh_eval_model, cont_eval_model, config, datas
                                                  expected_type=expected_type)
 
             # Generating feedback
-            if not config['report_feedback']:
-                print(f"Paper: {main_paper_id} Iteration {i}/{config['num_iterations']} Generating feedback...")
-                record[i]['feedback'], cost['individual'][i]['feedback_cost'] = generate(model=generator_model,
-                                                                                         system_prompt=config['prompts']['feedback']['system_prompt'],
-                                                                                         user_prompt=record[i]['eval_report'])
-                cost['total'] += cost['individual'][i]['feedback_cost']['total_cost']
+            print(f"Paper: {main_paper_id} Iteration {i}/{config['num_iterations']} Generating feedback...")
+            record[i]['feedback'], cost['individual'][i]['feedback_cost'] = generate(model=generator_model,
+                                                                                        system_prompt=config['prompts']['feedback']['system_prompt'],
+                                                                                        user_prompt=record[i]['eval_report'])
+            cost['total'] += cost['individual'][i]['feedback_cost']['total_cost']
 
         # Save the completed papers so far to avoid waste sources in case of API problems
         utils.save(record, os.path.join(config['output_path'], f"records/{main_paper_id}.json"))
