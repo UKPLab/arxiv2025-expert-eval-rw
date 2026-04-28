@@ -421,9 +421,9 @@ def main(args):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--exp_name', reqired=True, type=str)
-    parser.add_argument('--env_file', reqired=True, type=str)
-    parser.add_argument('--deployment_name', reqired=True, type=str)
+    parser.add_argument('--exp_name', required=True, type=str)
+    parser.add_argument('--env_file', required=True, type=str)
+    parser.add_argument('--deployment_name', required=True, type=str)
     parser.add_argument('--api_version', default='2025-03-01-preview', type=str)
     parser.add_argument('--prompt_file', default='prompts.json', type=str)
     parser.add_argument('--dataset_file', required=True, type=str)
